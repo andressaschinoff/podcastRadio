@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Podcast Radio</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Podcast Radio</h1>
+      <div class="center">
+        <input value="87.5" type="text" id="inputFrequency" readonly disabled />
+      </div>
+
+      <div class="flex-row">
+        <span>87.5</span>
+        <input
+          type="range"
+          min="87.5"
+          max="108"
+          value="87.5"
+          step="0.1"
+          id="inputRange"
+        />
+        <span>108</span>
+      </div>
+      <div class="center" id="divContent">
+        Nenhum podcast encontrado!
+      </div>
+    </div>
+
+    <script src="./js/podcasts.js"></script>
+    <script src="./js/script.js"></script>
+  </body>
+</html>
